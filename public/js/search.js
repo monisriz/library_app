@@ -14,7 +14,6 @@ $(document).ready(function () { // only begin once page has loaded
                       && item.volumeInfo.industryIdentifiers && item.volumeInfo.publishedDate) {
                           return {
                               // label value will be shown in the suggestions
-                              // label: item.volumeInfo.title + ', ' + item.volumeInfo.authors[0] + ', ' + item.volumeInfo.publishedDate,
                               label: item.volumeInfo.title + ' - ' + item.volumeInfo.authors[0],
 
                               // value is what gets put in the textbox once an item selected
