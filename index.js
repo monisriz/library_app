@@ -2,8 +2,8 @@ var express = require('express');
 var app = express();
 require('dotenv').config();
 var passport = require('passport');
-var flash    = require('connect-flash');
-var morgan       = require('morgan');
+var flash = require('connect-flash');
+var morgan = require('morgan');
 var cookieParser = require('cookie-parser');
 var body_parser = require('body-parser');
 var session = require('express-session');
@@ -16,7 +16,7 @@ app.use(cookieParser()); // read cookies (needed for auth)
 app.use(body_parser.urlencoded({extended: false}));
 app.set('view engine', 'hbs');
 app.use('/static', express.static('public'));
-// var searchModule = require('./search')
+
 
 //Passport stuff
 
@@ -86,10 +86,10 @@ app.post('/add/:book_id', isLoggedIn, function (request, response, next) {
         db.any(update, [book_id, title, author, genre, description, pub_date, isbn, cover, userid])
       }
     })
-      .then(function() {
-        response.redirect('/lib_main');
-      })
-      .catch(next);
+    .then(function() {
+      response.redirect('/lib_main');
+    })
+    .catch(next);
 });
 
 
@@ -99,9 +99,6 @@ app.post('/delete/:book_id', isLoggedIn, function (request, response, next) {
 
   let update = "DELETE FROM books WHERE book_id = $1 AND userid = $2";
   db.any(update, [book_id, userid])
-    // .then(function() {
-    //   return db.any(update, book_id, userid);
-    // })
     .then(function() {
       response.redirect('/lib_main');
     })
