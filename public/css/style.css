@@ -1,0 +1,96 @@
+html, body {
+  /*overflow-x: hidden;*/
+  /*background: url('../images/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-weight: lighter;
+}
+
+/*.mainpage {
+  color: white;
+}*/
+/*.mainpage a {
+
+}*/
+
+
+.searchBox {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 50%;
+  margin: 20px auto;
+}
+
+#searchHeading {
+  display: none;
+  margin-left: 20px;
+}
+.libItems {
+  width: 60%;
+  margin: 0 auto;
+}
+.bookDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 10px;
+}
+
+/*.descBtn {
+  width: auto;
+  height: 10%;
+}*/
+
+.itemBtns {
+  margin: 10px auto;
+}
+
+
+.descResult {
+  display: none;
+}
+/*.descForm {
+  display: none;
+}*/
+
+#addBtn {
+  display: none;
+  justify-content: center;
+  margin-left: 20px;
+
+}
+
+.libItems {
+  margin-top: 20px;
+}
+
+#divDescription {
+  width: 60vw;
+  margin: 20px 50px;
+  text-align: justify;
+}
+.loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50vh auto;
+  text-align: center;
+}
+
+.emptyLib {
+  display: flex;
+  margin: 100px auto;
+  justify-content: center;
+}

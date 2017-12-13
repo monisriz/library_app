@@ -9,9 +9,17 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.17.1",
     "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
     "express": "^4.16.2",
+    "express-session": "^1.15.6",
     "hbs": "^4.0.1",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-google-oauth": "^1.0.0",
     "pg-promise": "^7.3.2"
   },
   "devDependencies": {
