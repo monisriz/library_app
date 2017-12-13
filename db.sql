@@ -1,5 +1,5 @@
 CREATE TABLE "books" (
-    "id" text,
+    "id" SERIAL,
     "book_id" text,
     "title" text,
     "author" text,
@@ -8,7 +8,7 @@ CREATE TABLE "books" (
     "pub_date" text,
     "isbn" text,
     "cover" text,
-    "userid" text references users(userid)
+    "userid" text references users(userid),
     PRIMARY KEY ("id")
 );
 
